@@ -24,12 +24,7 @@ public class Solution {
             public int compare(Node a, Node b) {
                 if(a.val == b.val) {
                     // if both equal then departure should come first
-                    if(a.type == 'd') {
-                        return -1;
-                    }
-                    if(b.type == 'd') {
-                        return 1;
-                    }
+                    return (a.type == 'd')? -1: 1;
                 }
                 return a.val - b.val;
             }
