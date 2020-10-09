@@ -29,7 +29,7 @@ public class Vector2D {
     }
  
     public boolean hasNext() {
-		// list can be empty as well as null
+        // list can be empty as well as null
         while (rowId < numRows && (vec2d.get(rowId) == null || vec2d.get(rowId).isEmpty())) {
             rowId++;
         }
