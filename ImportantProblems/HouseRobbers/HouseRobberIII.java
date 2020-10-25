@@ -44,8 +44,8 @@ class Solution {
         
         // all 4 posibilities
         int currNotRob = Math.max(left.notRob + right.notRob,
-						 Math.max(left.notRob + right.rob,
-						 Math.max( left.rob + right.rob, left.rob + right.notRob)));
+                         Math.max(left.notRob + right.rob,
+                         Math.max( left.rob + right.rob, left.rob + right.notRob)));
         
         return new Pair(currRob, currNotRob);
         

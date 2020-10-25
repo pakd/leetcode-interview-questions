@@ -15,15 +15,15 @@ class Solution {
     public int rob(int[] nums, int start, int end) {
 
         int prevRobbed = nums[start];
-		int prevNotRobbed = 0;
-		
-		for(int i=start+1; i<=end; i++) {
-			int temp = prevRobbed;            
-			prevRobbed = prevNotRobbed + nums[i];
+        int prevNotRobbed = 0;
+        
+        for(int i=start+1; i<=end; i++) {
+            int temp = prevRobbed;            
+            prevRobbed = prevNotRobbed + nums[i];
             prevNotRobbed = Math.max(temp, prevNotRobbed);
-		}
-		
-		return Math.max(prevNotRobbed, prevRobbed);
+        }
+        
+        return Math.max(prevNotRobbed, prevRobbed);
     }
     
 }
