@@ -27,7 +27,7 @@ class Solution {
             result = result*10 + (long)(str.charAt(i) - '0');
         }
         if(result > (long)Integer.MAX_VALUE) {
-                return (sign == -1)? Integer.MIN_VALUE: Integer.MAX_VALUE;
+            return (sign == -1)? Integer.MIN_VALUE: Integer.MAX_VALUE;
         }
         
         return sign*(int)result;
