@@ -7,9 +7,7 @@ class Solution {
         for(int i=1; i<nums.length; i++) {
             for(int j=0; j<i; j++) {
                 if(dp[j] == true) {
-                    if(i <= (j + nums[j])) {
-                        dp[i] = true;
-                    }
+                    if(i <= (j + nums[j])) dp[i] = true;
                 }
             }
         }

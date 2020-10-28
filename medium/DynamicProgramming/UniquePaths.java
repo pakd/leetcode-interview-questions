@@ -6,7 +6,7 @@ class Solution {
             for(int j=0; j<n; j++) {
                 if(i == 0 || j == 0) {
                     dp[i][j] = 1;
-                        continue;
+                    continue;
                 }
                 dp[i][j] = dp[i-1][j] + dp[i][j-1];
             }
