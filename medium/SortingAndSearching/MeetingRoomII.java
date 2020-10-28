@@ -9,7 +9,6 @@ public class Solution {
         }
     }
     
-    
     public int solve(ArrayList<ArrayList<Integer>> A) {
         
         List<Node> list = new ArrayList();
