@@ -30,9 +30,7 @@ public class Solution {
     
     public TreeNode getSuccessor(TreeNode a, int b) {
         
-        if(a == null) {
-            return null;
-        }
+        if(a == null) return null;
         
         TreeNode curr = findNode(a, b);
         if(curr == null) return curr;
